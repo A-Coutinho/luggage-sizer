@@ -1,0 +1,78 @@
+import type { AirlineLuggage } from "./types";
+
+export const AirlinesDB: AirlineLuggage[] = [
+    {
+        airline: { name: "Ryanair", code: "RR" },
+        cabinSmallLuggage: { large: 40, medium: 25, small: 20 },
+        cabinLargeLuggage: { large: 55, medium: 40, small: 20, weight: 10 },
+        checkedSmallLuggage: { large: 120, medium: 120, small: 80, weight: 10 },
+        checkedLargeLuggage: { large: 120, medium: 120, small: 80, weight: 20 },
+        checkedExtraLargeLuggage: { large: 1, medium: 1, small: 1, weight: 0 },
+    },
+    {
+        airline: { name: "Easyjet", code: "EC" },
+        cabinSmallLuggage: { large: 45, medium: 36, small: 20, weight: 15 },
+        cabinLargeLuggage: { large: 56, medium: 45, small: 25, weight: 15 },
+        checkedSmallLuggage: { sizeTotal: 275, weight: 15 },
+        checkedLargeLuggage: { sizeTotal: 275, weight: 23 },
+        checkedExtraLargeLuggage: { sizeTotal: 275, weight: 32 },
+    },
+    {
+        airline: { name: "Air France", code: "AF" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 15, weight: 12 },
+        cabinLargeLuggage: { large: 55, medium: 35, small: 25, weight: 12 },
+        checkedSmallLuggage: { large: 158, medium: 158, small: 158, sizeTotal: 300, weight: 23 },
+        checkedLargeLuggage: { large: 158, medium: 158, small: 158, sizeTotal: 300, weight: 32 },
+    },
+    {
+        airline: { name: "British Airways", code: "BA" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 15, weight: 0 },
+        cabinLargeLuggage: { large: 56, medium: 45, small: 25, weight: 0 },
+        checkedSmallLuggage: { large: 90, medium: 75, small: 43, weight: 23 },
+        checkedLargeLuggage: { large: 90, medium: 75, small: 43, weight: 32 },
+    },
+    {
+        airline: { name: "TAP", code: "TP" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 15, weight: 0 },
+        cabinLargeLuggage: { large: 55, medium: 40, small: 25, weight: 0 },
+        checkedSmallLuggage: { large: 158, medium: 158, small: 158, weight: 23 },
+        checkedLargeLuggage: { large: 158, medium: 158, small: 158, weight: 32 },
+    },
+    {
+        airline: { name: "KLM", code: "KM" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 15, weight: 0 },
+        cabinLargeLuggage: { large: 55, medium: 35, small: 25, weight: 0 },
+        checkedSmallLuggage: { large: 158, medium: 158, small: 158, weight: 23 },
+        checkedLargeLuggage: { large: 158, medium: 158, small: 158, weight: 32 },
+    },
+    {
+        airline: { name: "Lufthansa", code: "LH" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 10, weight: 0 },
+        cabinLargeLuggage: { large: 55, medium: 40, small: 23, weight: 0 },
+        checkedSmallLuggage: { large: 158, medium: 158, small: 158, weight: 23 },
+        checkedLargeLuggage: { large: 158, medium: 158, small: 158, weight: 32 },
+    },
+    {
+        airline: { name: "Vueling", code: "VY" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 20, weight: 0 },
+        cabinLargeLuggage: { large: 55, medium: 40, small: 20, weight: 0 },
+        checkedSmallLuggage: { large: 158, medium: 158, small: 158, weight: 20 },
+        checkedLargeLuggage: { large: 158, medium: 158, small: 158, weight: 25 },
+        checkedExtraLargeLuggage: { large: 158, medium: 158, small: 158, weight: 30 },
+    },
+    {
+        airline: { name: "Wizz Air", code: "W6" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 20, weight: 0 },
+        cabinLargeLuggage: { large: 55, medium: 40, small: 23, weight: 0 },
+        checkedSmallLuggage: { large: 171, medium: 149, small: 119, weight: 10 },
+        checkedLargeLuggage: { large: 171, medium: 149, small: 119, weight: 20 },
+        checkedExtraLargeLuggage: { large: 171, medium: 149, small: 119, weight: 32 },
+    },
+    {
+        airline: { name: "Air Europa", code: "UX" },
+        cabinSmallLuggage: { large: 40, medium: 30, small: 15, weight: 0 },
+        cabinLargeLuggage: { large: 55, medium: 35, small: 25, weight: 0 },
+        checkedSmallLuggage: { large: 158, medium: 158, small: 158, weight: 23 },
+        checkedLargeLuggage: { large: 158, medium: 158, small: 158, weight: 32 },
+    },
+];
