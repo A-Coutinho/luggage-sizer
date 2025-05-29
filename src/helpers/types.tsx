@@ -19,3 +19,24 @@ export interface Airline {
     name: string;
     code: string;
 }
+
+export interface SqlAirline {
+    name: string;
+    code: string;
+}
+
+export interface SqlType {
+    id: number;
+    name: string;
+}
+
+export interface SqlLuggage {
+    id: number;
+    small?: number;
+    medium?: number;
+    large?: number;
+    type: number;
+    airline: string;
+    weight?: number;
+    sizeTotal?: number;
+}

@@ -17,7 +17,7 @@ const ComponentWrapper = styled.div<{ $isSelected?: boolean }>`
     width: 105px;
 `;
 
-const ImageContainer = styled.div<{}>`
+const ImageContainer = styled.div<{ $isSelected?: boolean }>`
     background: none;
     width: auto;
     display: inline-block;
@@ -26,6 +26,8 @@ const ImageContainer = styled.div<{}>`
     background-color: white;
     border: 1px solid white;
     border-radius: 50%;
+
+    ${(props) => (props.$isSelected ? "background-color: grey;" : null)}
 `;
 
 const ImageWrapper = styled.div<{}>``;
@@ -52,7 +54,7 @@ const AirlineDescText = styled.span<{}>`
 export const AirlineComponent: React.FC<Props> = ({ airline, onClickAction, isSelected }) => {
     const [isAirlineSelected, isAirlineSelectedSet] = useState<boolean>(false);
 
-    function tabClick(_airline: string) {
+    function tabClick(_airline: Airline) {
         if (onClickAction) {
             onClickAction(_airline);
             isAirlineSelectedSet(!isAirlineSelected);
@@ -61,9 +63,9 @@ export const AirlineComponent: React.FC<Props> = ({ airline, onClickAction, isSe
 
     return (
         <>
-            <ComponentContainer onClick={(event) => tabClick(airline.name)}>
+            <ComponentContainer onClick={(event) => tabClick(airline)}>
                 <ComponentWrapper $isSelected={isAirlineSelected}>
-                    <ImageContainer>
+                    <ImageContainer $isSelected={isAirlineSelected}>
                         <ImageWrapper>
                             <AirlineImg $airline={airline}></AirlineImg>
                         </ImageWrapper>
